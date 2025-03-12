@@ -1,0 +1,8 @@
+1. Add dialation and rotation handling
+2. Add choice in ambient light intensity and color
+3.better camera implamentation
+4. get rid of hit boxes
+5. more optimization
+6. make update just take care of renderer crap(no move and stuff)-> have move take care of that, 
+so update can be called after collision processing to prevent overlap
+7.layers using z-axis

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5ae64d22-9393-49c9-adac-e3e430ba5b5c}</ProjectGuid>
+    <RootNamespace>ShapeShiftV2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)ShapeShiftV2\engine\Objects;$(SolutionDir)ShapeShiftV2\game\Objects\Entities;$(SolutionDir)ShapeShiftV2\game\Objects\Terrains;$(SolutionDir)ShapeShiftV2\game\Objects\Elements;$(SolutionDir)ShapeShiftV2\game;$(SolutionDir)ShapeShiftV2\engine;$(SolutionDir)ShapeShiftV2\engine\renderer\BatchRendererV1\Include;$(SolutionDir)ShapeShiftV2\engine\renderer\BatchRendererV1\Include\Gladstuff;$(SolutionDir)ShapeShiftV2\engine\renderer\BatchRendererV1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)ShapeShiftV2\engine\renderer\BatchRendererV1\Include\GLFW\glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)ShapeShiftV2\engine\Objects;$(SolutionDir)ShapeShiftV2\game\Objects\Entities;$(SolutionDir)ShapeShiftV2\game\Objects\Terrains;$(SolutionDir)ShapeShiftV2\game\Objects\Elements;$(SolutionDir)ShapeShiftV2\game;$(SolutionDir)ShapeShiftV2\engine;$(SolutionDir)ShapeShiftV2\engine\renderer\BatchRendererV1\Include;$(SolutionDir)ShapeShiftV2\engine\renderer\BatchRendererV1\Include\Gladstuff;$(SolutionDir)ShapeShiftV2\engine\renderer\BatchRendererV1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)ShapeShiftV2\engine\renderer\BatchRendererV1\Include\GLFW\glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="engine\misc\Engine.h" />
+    <ClInclude Include="engine\misc\Globals.h" />
+    <ClInclude Include="engine\misc\Input.h" />
+    <ClInclude Include="engine\misc\Logger.h" />
+    <ClInclude Include="engine\misc\mathStuff.h" />
+    <ClInclude Include="engine\Objects\Element.h" />
+    <ClInclude Include="engine\Objects\Entity.h" />
+    <ClInclude Include="engine\Objects\Object.h" />
+    <ClInclude Include="engine\Objects\Terrain.h" />
+    <ClInclude Include="engine\physics\Collision.h" />
+    <ClInclude Include="engine\physics\HBox.h" />
+    <ClInclude Include="engine\physics\Physics.h" />
+    <ClInclude Include="engine\physics\PhysicsGlobals.h" />
+    <ClInclude Include="engine\physics\SimpleBody.h" />
+    <ClInclude Include="engine\renderer\BatchRendererV1\src\particle.h" />
+    <ClInclude Include="engine\renderer\BatchRendererV1\src\render.h" />
+    <ClInclude Include="engine\renderer\BatchRendererV1\src\rendererInclude.h" />
+    <ClInclude Include="engine\renderer\BatchRendererV1\src\shader.h" />
+    <ClInclude Include="engine\renderer\BatchRendererV1\src\Sprite.h" />
+    <ClInclude Include="engine\renderer\BatchRendererV1\src\text.h" />
+    <ClInclude Include="engine\renderer\BatchRendererV1\src\Transformer.h" />
+    <ClInclude Include="game\assets\graphics.h" />
+    <ClInclude Include="game\Entities\Player.h" />
+    <ClInclude Include="engine\Objects\Light.h" />
+    <ClInclude Include="game\main\Game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine\misc\Engine.cpp" />
+    <ClCompile Include="engine\misc\Globals.cpp" />
+    <ClCompile Include="engine\misc\Input.cpp" />
+    <ClCompile Include="engine\misc\Logger.cpp" />
+    <ClCompile Include="engine\misc\mathStuff.cpp" />
+    <ClCompile Include="engine\physics\Collision.cpp" />
+    <ClCompile Include="engine\physics\HBox.cpp" />
+    <ClCompile Include="engine\physics\Physics.cpp" />
+    <ClCompile Include="engine\physics\PhysicsGlobals.cpp" />
+    <ClCompile Include="engine\physics\SimpleBody.cpp" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\glad.c" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\particle.cpp" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\render.cpp" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\rendererInclude.cpp" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\shader.cpp" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\Sprite.cpp" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\STB.cpp" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\text.cpp" />
+    <ClCompile Include="engine\renderer\BatchRendererV1\src\Transformer.cpp" />
+    <ClCompile Include="game\assets\graphics.cpp" />
+    <ClCompile Include="game\main\Game.cpp" />
+    <ClCompile Include="game\main\main.cpp" />
+    <ClCompile Include="engine\Objects\Element.cpp" />
+    <ClCompile Include="engine\Objects\Entity.cpp" />
+    <ClCompile Include="engine\Objects\Object.cpp" />
+    <ClCompile Include="engine\Objects\Terrain.cpp" />
+    <ClCompile Include="game\Entities\Player.cpp" />
+    <ClCompile Include="engine\Objects\Light.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="changestoBatchRenderer.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
